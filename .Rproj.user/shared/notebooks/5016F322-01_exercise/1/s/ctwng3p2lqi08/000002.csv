@@ -1,5 +1,0 @@
-"0","data_schwein_grouped <- data_schwein_CH %>%"
-"0","  group_by(TierID) %>%"
-"0","  summarise()"
-"2","`summarise()` ungrouping output (override with `.groups` argument)
-"

@@ -1,0 +1,6 @@
+rmd_files: [
+  "index.Rmd",
+  "01_exercise.Rmd"
+]
+
+output_dir: "docs"

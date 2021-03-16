@@ -1,4 +1,4 @@
-## Exercise 1
+# Exercise 1 
 
 ```{r libraries, message=FALSE}
 library(tidyverse)
@@ -7,9 +7,9 @@ library(raster)
 library(ggplot2)
 ```
 
-### Tasks 1 - 3
+## Tasks 1 - 3
 
-```{r data}
+```{r data, include=FALSE}
 data_schwein <- read_delim("data/wildschwein_BE.csv", delim = ',')
 
 ggplot(data = data_schwein) + geom_point(aes(x = Long, y = Lat, color = TierID))
@@ -22,7 +22,7 @@ data_schwein_sf <- st_as_sf(data_schwein, coords = c("Long", "Lat"),
                             crs = 4326)
 ```
 
-### Task 4: Project data from WGS84
+## Task 4: Project data from WGS84
 
 ```{r intoSwissCRS}
 data_schwein_CH <- st_transform(data_schwein_sf, 2056)
@@ -42,7 +42,7 @@ mcp_plot <- ggplot(data = mcp) +
   geom_sf(aes(fill = TierID),alpha = 0.5) + coord_sf(datum = 2056)
 ```
 
-### Task 5: Import Raster Data
+## Task 5: Import Raster Data
 
 ```{r import raster data}
 pk100_BE <- brick("data/pk100_BE_2056.tif")
@@ -54,7 +54,7 @@ plot(pk100_BE)
 ```
 
 
-### Task 6: Adding a background map
+## Task 6: Adding a background map
 
 ```{r background map, echo=FALSE}
 library(tmap)
