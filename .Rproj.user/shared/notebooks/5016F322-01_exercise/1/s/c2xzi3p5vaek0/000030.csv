@@ -1,0 +1,9 @@
+"0","library(tmap)"
+"0"," "
+"0","tm_shape(pk100_BE) + "
+"0","  tm_rgb() +"
+"0","  tm_shape(mcp) +"
+"0","  tm_polygons(col = ""TierID"",alpha = 0.4,border.col = ""red"") +"
+"0","  tm_legend(bg.color = ""white"")"
+"2","stars object downsampled to 1129 by 886 cells. See tm_shape manual (argument raster.downsample)
+"

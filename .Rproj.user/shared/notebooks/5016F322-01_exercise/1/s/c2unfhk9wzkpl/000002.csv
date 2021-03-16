@@ -1,0 +1,5 @@
+"0","data_schwein_sf <- st_as_sf(data_schwein)
+"
+"2","Fehler in st_sf(x, ..., agr = agr, sf_column_name = sf_column_name) : 
+  no simple features geometry column present
+"
